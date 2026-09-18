@@ -2,6 +2,8 @@
   "LuaSnip": { "branch": "master", "commit": "642b0c595e11608b4c18219e93b88d7637af27bc" },
   "arena.nvim": { "branch": "main", "commit": "9ebbf55b4f0e3815e3caf3264cc1a2721b5111e9" },
   "baleia.nvim": { "branch": "main", "commit": "710537ff5cd669c5a76c5f5b6a9169fd9b913d18" },
+  "base16-40deea.nvim": { "branch": "main", "commit": "ef03130c28c3b1357e43bc7528291be2eb56458a" },
+  "base16-nvim": { "branch": "master", "commit": "44fc7a0d7ad878f90b04ffe8fa58c99c19007509" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "ccc.nvim": { "branch": "main", "commit": "9d1a256e006decc574789dfc7d628ca11644d4c2" },
