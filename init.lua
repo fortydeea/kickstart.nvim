@@ -98,6 +98,23 @@ vim.g.have_nerd_font = true
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+-- Enough for treesitter folds to work
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+
+vim.opt.foldenable = true
+vim.opt.foldlevel = 99 -- start fully unfolded
+vim.opt.foldlevelstart = 99
+
+vim.opt.foldcolumn = '1'
+
+vim.opt.fillchars = {
+  fold = ' ',
+  foldopen = '',
+  foldclose = '',
+  foldsep = ' ',
+}
+
 -- Make line numbers default
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -976,7 +993,27 @@ require('lazy').setup({
     branch = 'main',
     build = ':TSUpdate',
     config = function()
-      local ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' }
+      local ensure_installed = {
+        'bash',
+        'c',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'vim',
+        'vimdoc',
+        'cpp',
+        'python',
+        'java',
+        'go',
+        'rust',
+        'kotlin',
+        'javascript',
+        'tsx',
+      }
       require('nvim-treesitter').install(ensure_installed)
 
       ---@param buf integer
